@@ -1,0 +1,10 @@
+loguru==0.7.2
+mlx==0.15.1
+mlx_lm==0.14.3
+Requests==2.32.3
+torch==2.3.0
+transformers==4.41.2
+python-dotenv==1.0.1
+asitop==0.0.24
+accelerate==0.32.1
+termcolor==2.4.0
