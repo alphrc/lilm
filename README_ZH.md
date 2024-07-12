@@ -1,8 +1,8 @@
 中文 ｜ [English](./README.md)
 
-<p style="text-align: center"><img src="assets/icon.jpg" width="150"/></p>
+<p align="center"><img src="assets/icon.jpg" width="150"/></p>
 
-<p style="text-align: center"> 
+<p align="center">
 原創性：<span style="color:yellow">★★★</span>☆☆
 &nbsp
 創新性：<span style="color:yellow">★★</span>☆☆☆
@@ -10,7 +10,7 @@
 挑戰性：<span style="color:yellow">★★</span>☆☆☆
 </p>
 
-<p style="text-align: center;"> 
+<p align="center">
 🛠️ <a href="#運作原理">運作原理</a>
 ｜
 📁 <a href="#文件結構">文件結構</a>

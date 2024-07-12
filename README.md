@@ -1,8 +1,8 @@
 [中文](./README_ZH.md) ｜ English
 
-<p style="text-align: center"><img src="assets/icon.jpg" width="150"/></p>
+<p align="center"><img src="assets/icon.jpg" width="150"/></p>
 
-<p style="text-align: center"> 
+<p align="center">
 Originality：<span style="color:yellow">★★★</span>☆☆
 &nbsp
 Innovation：<span style="color:yellow">★★</span>☆☆☆
@@ -10,7 +10,7 @@ Innovation：<span style="color:yellow">★★</span>☆☆☆
 Challenge：<span style="color:yellow">★★</span>☆☆☆
 </p>
 
-<p style="text-align: center;"> 
+<p align="center">
 🛠️ <a href="#operation-principles">Operation Principles</a>
 ｜
 📁 <a href="#file-structure">File Structure</a>
@@ -19,7 +19,7 @@ Challenge：<span style="color:yellow">★★</span>☆☆☆
 ｜
 👀 <a href="#example-results">Example Results</a>
 </p>
-<p style="text-align: center;"> 
+<p align="center">
 📣 <a href="#common-errors">Common Errors</a>
 ｜
 🙋🏻‍♂️ <a href="#frequently-asked-questions">Frequently Asked Questions</a>
