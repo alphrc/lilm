@@ -3,11 +3,26 @@
 <p align="center"><img src="assets/icon.jpg" width="150"/></p>
 
 <p align="center">
-原創性：<span style="color:yellow">★★★</span>☆☆
+原創性：
+<img src="assets/star_yellow.png" width="15"/>
+<img src="assets/star_yellow.png" width="15"/>
+<img src="assets/star_yellow.png" width="15"/>
+<img src="assets/star_blank.png" width="15"/>
+<img src="assets/star_blank.png" width="15"/>
 &nbsp
-創新性：<span style="color:yellow">★★</span>☆☆☆
+創新性：
+<img src="assets/star_yellow.png" width="15"/>
+<img src="assets/star_yellow.png" width="15"/>
+<img src="assets/star_blank.png" width="15"/>
+<img src="assets/star_blank.png" width="15"/>
+<img src="assets/star_blank.png" width="15"/>
 &nbsp
-挑戰性：<span style="color:yellow">★★</span>☆☆☆
+挑戰性：
+<img src="assets/star_yellow.png" width="15"/>
+<img src="assets/star_yellow.png" width="15"/>
+<img src="assets/star_blank.png" width="15"/>
+<img src="assets/star_blank.png" width="15"/>
+<img src="assets/star_blank.png" width="15"/>
 </p>
 
 <p align="center">

@@ -3,11 +3,26 @@
 <p align="center"><img src="assets/icon.jpg" width="150"/></p>
 
 <p align="center">
-Originality：<span style="color:yellow">★★★</span>☆☆
+Originality:
+<img src="assets/star_yellow.png" width="15"/>
+<img src="assets/star_yellow.png" width="15"/>
+<img src="assets/star_yellow.png" width="15"/>
+<img src="assets/star_blank.png" width="15"/>
+<img src="assets/star_blank.png" width="15"/>
 &nbsp
-Innovation：<span style="color:yellow">★★</span>☆☆☆
+Innovation:
+<img src="assets/star_yellow.png" width="15"/>
+<img src="assets/star_yellow.png" width="15"/>
+<img src="assets/star_blank.png" width="15"/>
+<img src="assets/star_blank.png" width="15"/>
+<img src="assets/star_blank.png" width="15"/>
 &nbsp
-Challenge：<span style="color:yellow">★★</span>☆☆☆
+Challenge:
+<img src="assets/star_yellow.png" width="15"/>
+<img src="assets/star_yellow.png" width="15"/>
+<img src="assets/star_blank.png" width="15"/>
+<img src="assets/star_blank.png" width="15"/>
+<img src="assets/star_blank.png" width="15"/>
 </p>
 
 <p align="center">
