@@ -58,7 +58,6 @@ class LiLM:
     def print_section(self, title: str, content: str, color: str) -> None:
         print('\n' + colored(title + ":", color))
         print(content)
-        print(colored(f"{title} END", color))
 
     def generate(self, user_message: str, save_path: str = None) -> None:
         self.print_section("POST", user_message.rstrip('\n'), 'green')
@@ -133,11 +132,11 @@ def interactive(pretrained_model_name_or_path: str) -> None:
 
     while True:
         try:
-            user_input = input(colored("Enter thread URL or ID: ", 'light_yellow'))
+            user_input = input(colored("\n" + "Enter thread URL or ID: ", 'light_yellow'))
             thread_id = int(user_input) if user_input.isdigit() else get_thread_id_from_url(user_input)
             thread = get_thread_from_id(thread_id)
             prompt = get_prompt_from_thread(thread)
-            print(colored(f"Generating response for thread ...", "blue"))
+            print(colored(f"Generating response for thread...", "blue"))
             lilm.generate(prompt, save_path='results.jsonl')
         except KeyboardInterrupt:
             quit()
@@ -167,15 +166,15 @@ def introduction():
     print(colored("Welcome to LiLM by alphrc!\n", 'green'))
     print(f"* This language model generates responses in the style of the Hong Kong LIHKG forum.")
     print(f"* For more information, updates, or to contribute to the project, visit: {colored('https://github.com/alphrc', 'cyan')}")
-    print(f"Press CTRL+C to quit at any time.")
+    print(f"* Press CTRL+C to quit at any time.")
     print()
 
 
 def select_mode():
     print(colored('Available modes:', 'light_yellow'))
-    print(colored('- (1) Demo', 'white'))
-    print(colored('- (2) Interactive', 'white'))
-    print(colored('- (3) Test', 'white'))
+    print(colored('(1) Demo', 'white'))
+    print(colored('(2) Test', 'white'))
+    print(colored('(3) Interactive', 'white'))
     while True:
         mode_id = input(colored('Enter mode ID: ', 'light_yellow'))
         if mode_id.isdigit() and int(mode_id) in range(1, 4):
@@ -190,7 +189,7 @@ def select_model() -> str:
     if len(os.listdir("model")) == 0:
         print(colored("No models found in the model directory. Please fuse a model and try again.", 'red'))
         quit()
-    for i, model in enumerate(sorted(os.listdir("model"))):
+    for i, model in enumerate(sorted([model for model in os.listdir("model") if model != ".gitkeep"])):
         print(colored(f"({i+1}) {model}", 'white'))
     while True:
         model_id = input(colored(f'Enter model ID: ', 'light_yellow'))
@@ -202,7 +201,7 @@ def select_model() -> str:
 
 
 def run(mode: str, model: str) -> None:
-    {"1": demo, "2": interactive, "3": test}[mode](model)
+    {"1": demo, "2": test, "3": interactive}[mode](model)
 
 
 if __name__ == "__main__":
