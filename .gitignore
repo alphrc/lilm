@@ -183,3 +183,5 @@ model/*
 # Test
 demo/results.jsonl
 results.jsonl
+
+*.DS_Store
