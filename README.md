@@ -134,45 +134,69 @@ sudo asitop
 ### Inference Using the Base Model
 The model will automatically download the first time it is run, `--model` can be used for the full name of the model on Hugging Face or its path,
 ```bash
-mlx_lm.generate     --model Qwen/Qwen1.5-32B-Chat     --prompt "What is LIHKG?"
+mlx_lm.generate \
+    --model Qwen/Qwen1.5-32B-Chat \
+    --prompt "What is LIHKG?"
 ```
 
 ### Fine-tuning
 After preparing the `train.jsonl` and `valid.jsonl` datasets in `dataset/chat`, start fine-tuning the model from scratch and generate the `adapters/` folder.
 ```bash
-mlx_lm.lora     --model Qwen/Qwen1.5-32B-Chat     --train     --data dataset/chat     --iters 600     --grad-checkpoint
+mlx_lm.lora \
+    --model Qwen/Qwen1.5-32B-Chat \
+    --train \
+    --data dataset/chat \
+    --iters 600 \
+    --grad-checkpoint
 ```
 
 ### Continue Fine-tuning
 Continue fine-tuning using an existing adapter, `--resume-adapter-file` must be a `.safetensors` file.
 ```bash
-mlx_lm.lora     --model Qwen/Qwen1.5-32B-Chat     --resume-adapter-file adapters/adapters.safetensors     --train     --data dataset/chat     --iters 600     --grad-checkpoint
+mlx_lm.lora \
+    --model Qwen/Qwen1.5-32B-Chat \
+    --resume-adapter-file adapters/adapters.safetensors \
+    --train \
+    --data dataset/chat \
+    --iters 600 \
+    --grad-checkpoint
 ```
 🚨 Please note, you are likely to encounter [this error](#error-1).
 
 ### Inference with Adapter
 Perform generation using the base model combined with an adapter, where the adapter must be a `.safetensors` file.
 ```bash
-mlx_lm.generate     --model Qwen/Qwen1.5-32B-Chat     --adapter-path adapters/adapters.safetensors     --prompt "What is LIHKG?"
+mlx_lm.generate \
+    --model Qwen/Qwen1.5-32B-Chat \
+    --adapter-path adapters/adapters.safetensors \
+    --prompt "What is LIHKG?"
 ```
 
 ### Fusion of Base Model and Adapter
 The latest checkpoint `adapters.safetensors` in `adapters/` will be automatically selected for fusion, and the fused model will be placed in `model/lilm`.
 ```bash
-mlx_lm.fuse     --model Qwen/Qwen1.5-32B-Chat     --adapter-path adapters     --save-path model/lilm
+mlx_lm.fuse \
+    --model Qwen/Qwen1.5-32B-Chat \
+    --adapter-path adapters \
+    --save-path model/lilm
 ```
 
 ### Inference Using the Fused Model
 Use the path of the fused model in `--model`.
 ```bash
-mlx_lm.generate     --model model/lilm     --prompt "What is LIHKG?"
+mlx_lm.generate \
+    --model model/lilm \
+    --prompt "What is LIHKG?"
 ```
 
 ### Model Quantization (Optional)
 Use [quantization](https://blog.csdn.net/jinzhuojun/article/details/106955059) to reduce model parameter precision, compress model size, speed up inference, and reduce memory usage. The `--hf-path` is the same as before, can be the full name of the model on Hugging Face, or the model's path, and `--mlx-path` is the path where the compressed model is stored. However, testing shows that quantization significantly decreases model accuracy, and the quantized model cannot run using Hugging Face's Transformer.
 
 ```bash
-mlx_lm.convert     --hf-path model/lilm     --mlx-path model/lilm-4Bit     -q
+mlx_lm.convert \
+    --hf-path model/lilm \
+    --mlx-path model/lilm-4Bit \
+    -q
 ```
 
 ### Running LiLM
