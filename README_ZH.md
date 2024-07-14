@@ -109,7 +109,6 @@
 - `data/` : 數據抓取得到的原數據，以 `.csv` 儲存
 - `dataset/` : 處理後得到的訓練數據，根據格式分為 `completion/` 和 `chat/`
 - `adapters/` : 儲存 `mlx_lm.lora` 自動生成的 adapters 和 configuration
-- `adapters-qwen1.5-32b/` : Qwen/Qwen1.5-32B-Chat 的 adapters
 - `adapters-llama3-70b/`: Llama3-70B 的 adapters
 - `model/lilm` : 由基礎模型和 adapter 融合而成的融合模型，需運行以下 shell script 生成
 - `demo/` : 範例數據，供 `run.py` 使用
