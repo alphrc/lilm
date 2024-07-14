@@ -456,7 +456,7 @@ M1 / M2 上進行訓練，在 evaluate 的時候所用的 Memory 增加，遇到
 
 > 在 M3 Max 128GB (40 GPU Core) 上使用 17000 項訓練數據微調 16 層 1000 iterations 大概需要 4 小時；在 M2 Ultra 192GB (76 GPU Core) 上使用 51000 項訓練數據微調 16 層 1000 iterations 大概需要 3 小時。
 
-### **Q: 為什麼不使用 Windoes 和 CUDA？**
+### **Q: 為什麼不使用 Windows 和 CUDA？**
 
 > 我喜歡 Apple。
 
