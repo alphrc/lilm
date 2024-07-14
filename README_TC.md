@@ -1,4 +1,4 @@
-中文 ｜ [English](./README.md)
+繁 ｜ [简](./README_SC.md) ｜ [EN](./README.md)
 
 <p align="center"><img src="assets/icon.jpg" width="150"/></p>
 
