@@ -2,7 +2,7 @@
 
 <p align="center"><img src="assets/icon.jpg" width="150"/></p>
 
-<p align="center">
+<p align="center" style="display: flex; align-items: center; justify-content: center;">
 原创性：
 <img src="assets/star_yellow.png" width="15"/>
 <img src="assets/star_yellow.png" width="15"/>

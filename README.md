@@ -2,8 +2,9 @@
 
 <p align="center"><img src="assets/icon.jpg" width="150"/></p>
 
-<p align="center">
+<p align="center" style="display: flex; align-items: center; justify-content: center;">
 Originality:
+&nbsp
 <img src="assets/star_yellow.png" width="15"/>
 <img src="assets/star_yellow.png" width="15"/>
 <img src="assets/star_yellow.png" width="15"/>
@@ -11,6 +12,7 @@ Originality:
 <img src="assets/star_blank.png" width="15"/>
 &nbsp
 Innovation:
+&nbsp
 <img src="assets/star_yellow.png" width="15"/>
 <img src="assets/star_yellow.png" width="15"/>
 <img src="assets/star_blank.png" width="15"/>
@@ -18,6 +20,7 @@ Innovation:
 <img src="assets/star_blank.png" width="15"/>
 &nbsp
 Challenge:
+&nbsp
 <img src="assets/star_yellow.png" width="15"/>
 <img src="assets/star_yellow.png" width="15"/>
 <img src="assets/star_blank.png" width="15"/>
