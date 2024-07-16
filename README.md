@@ -46,7 +46,7 @@ Inspired by [Yi Lin](https://www.youtube.com/@lyi)'s [bilibot project](https://g
 
 After balancing computing costs and the [Chinese capability of base models](https://github.com/jeinlee1991/chinese-llm-benchmark), the open-source base model selected for this experimental project is [Qwen/Qwen1.5-32B-Chat](https://huggingface.co/Qwen/Qwen1.5-32B-Chat), which has 32 billion parameters. It utilizes the AI-specific framework [MLX](https://github.com/ml-explore/mlx) on the Apple Silicon platform and the [MLX-LM LoRA fine-tuning example](https://github.com/ml-explore/mlx-examples/blob/main/llms/mlx_lm/LORA.md#fine-tune), leveraging the [LoRA algorithm](https://arxiv.org/abs/2106.09685) on the M3 Max 128GB and M2 Ultra 192GB to fine-tune the base model.
 
-The model has shown significant improvement in Cantonese language ability after fine-tuning, and its tone and style are deeply influenced by the group of [LIHKG](https://zh.wikipedia.org/zh-hk/LIHKG討論區) users. For more details, see [Example Results](#example-results).
+The model has shown significant improvement in Cantonese language ability after fine-tuning, and its tone and style are deeply influenced by the group of [LIHKG](https://zh.wikipedia.org/zh-hk/LIHKG討論區) users. For more details, see [Example Results](#example-results). The fine-tuned model is available on Hugging Face: [alphrc/lilm](https://huggingface.co/alphrc/lilm/tree/main).
 
 To learn more about artificial intelligence and view more innovative and interesting projects in the future, please follow [alphrc](https://github.com/alphrc).
 

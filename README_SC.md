@@ -46,7 +46,7 @@
 
 在平衡运算成本和 [基础模型的中文能力](https://github.com/jeinlee1991/chinese-llm-benchmark) 后，本实验性项目选用的开源基础模型为 [Qwen/Qwen1.5-32B-Chat](https://huggingface.co/Qwen/Qwen1.5-32B-Chat)，具有320亿参数，借助 Apple Silicon 平台 AI 专用框架 [MLX](https://github.com/ml-explore/mlx) 的 [MLX-LM LoRA 微调示例](https://github.com/ml-explore/mlx-examples/blob/main/llms/mlx_lm/LORA.md#fine-tune)，利用 [LoRA 算法](https://arxiv.org/abs/2106.09685) 在 M3 Max 128GB 和 M2 Ultra 192GB 上对基础模型进行微调。
 
-微调后的模型在广东话语言能力上有显着提升，其语气和风格亦深受一众 [连登](https://zh.wikipedia.org/zh-hk/LIHKG讨论区) 用户的薰陶，详情可参见 [结果示例](#结果示例)。
+微调后的模型在广东话语言能力上有显着提升，其语气和风格亦深受一众 [连登](https://zh.wikipedia.org/zh-hk/LIHKG讨论区) 用户的薰陶，详情可参见 [结果示例](#结果示例)。模型已上载至 Hugging Face: [alphrc/lilm](https://huggingface.co/alphrc/lilm/tree/main)。
 
 若想了解更多关于人工智能的资讯，并在未来查看更多创新有趣的项目，请关注 [alphrc](https://github.com/alphrc)。
 
