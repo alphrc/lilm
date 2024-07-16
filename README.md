@@ -209,6 +209,14 @@ Use `src/run.py` to run the fused model, you can choose the `interactive` mode t
 python src/run.py
 ```
 
+### Download LiLM on Hugging Face
+LiLM has been uploaded to [Hugging Face]((https://huggingface.co/alphrc/lilm/tree/main)), and you can download the model directly to your local machine.
+
+```bash
+mlx_lm.convert \
+    --hf-path alphrc/lilm \
+    --mlx-path model/lilm
+```
 
 ## Example Results
 

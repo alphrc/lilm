@@ -210,6 +210,15 @@ mlx_lm.convert \
 python src/run.py
 ```
 
+### 在 Hugging Face 下載 LiLM
+LiLM 已上載至 [Hugging Face](https://huggingface.co/alphrc/lilm/tree/main)，可以直接下載模型到本地。
+
+```bash
+mlx_lm.convert \
+    --hf-path alphrc/lilm \
+    --mlx-path model/lilm
+```
+
 
 ## 結果示例
 
