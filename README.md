@@ -14,7 +14,7 @@ Originality:
 Innovation:
 &nbsp
 <img src="assets/star_yellow.png" width="15"/>
-<img src="assets/star_yellow.png" width="15"/>
+<img src="assets/star_half.png" width="15"/>
 <img src="assets/star_blank.png" width="15"/>
 <img src="assets/star_blank.png" width="15"/>
 <img src="assets/star_blank.png" width="15"/>
@@ -22,7 +22,7 @@ Innovation:
 Challenge:
 &nbsp
 <img src="assets/star_yellow.png" width="15"/>
-<img src="assets/star_yellow.png" width="15"/>
+<img src="assets/star_half.png" width="15"/>
 <img src="assets/star_blank.png" width="15"/>
 <img src="assets/star_blank.png" width="15"/>
 <img src="assets/star_blank.png" width="15"/>

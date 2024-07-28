@@ -12,14 +12,14 @@
 &nbsp
 創新性：
 <img src="assets/star_yellow.png" width="15"/>
-<img src="assets/star_yellow.png" width="15"/>
+<img src="assets/star_half.png" width="15"/>
 <img src="assets/star_blank.png" width="15"/>
 <img src="assets/star_blank.png" width="15"/>
 <img src="assets/star_blank.png" width="15"/>
 &nbsp
 挑戰性：
 <img src="assets/star_yellow.png" width="15"/>
-<img src="assets/star_yellow.png" width="15"/>
+<img src="assets/star_half.png" width="15"/>
 <img src="assets/star_blank.png" width="15"/>
 <img src="assets/star_blank.png" width="15"/>
 <img src="assets/star_blank.png" width="15"/>
